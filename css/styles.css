@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+    --background: #B1C8FF;
+    --navy: #1A2B55;
+    --navylight: #2D4789;
+}
+
+body {
+    font-family: Ubuntu;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boxes {
+    width: 100%;
+    aspect-ratio: 2 / 1.1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adder {
+    width: 75%;
+    height: 85%;
+    background: var(--navy);
+    margin: 75px;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+}
+
+.adder::-webkit-scrollbar {
+    width: 12px;
+}
+
+.adder::-webkit-scrollbar-track {
+    background: #121E3C;
+}
+
+.adder::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:var(--navylight); 
+}
+
+.plus {
+    width: 100%;
+    height: 10%;
+}
+
+.plus i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 30px;
+    aspect-ratio: 1/1;
+    background: white;
+    border-radius: 50%;
+    color: var(--navy);
+    float: right;
+    cursor: pointer;
+    transition: transform 250ms;
+}
+
+.plus i:hover {
+    transform: scale(1.1);
+}
+
+.itemsholder {
+    width: 100%;
+    height: 60px;
+}
+
+.itemholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.item {
+    width: 86.5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--navylight);
+    padding: 0 15px;
+    gap: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+input[type="text"], input[type="number"] {
+    background: white;
+    height: 45%;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.name {
+    width: 50%;
+    
+}
+
+.value {
+    width: 20%;
+}
+
+.colorp {
+    height: 49%;
+    cursor: pointer;
+    margin-left: -1px;
+    padding: 0 !important;
+}
+
+.colorp::-webkit-color-swatch {
+    border: none;
+    border-radius: 5px !important;
+}
+.colorp::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+
+.value::-webkit-inner-spin-button {
+    display: none;
+} 
+
+.x {
+    position: absolute;
+    color: red;
+    left: 98%;
+    bottom: 88%;
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.x i {
+    pointer-events: none;
+}
+
+.selector {
+    width: 100%;
+    height: 85%;
+    margin-right: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chooser {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    background: var(--navy);
+    position: relative;
+    width: 20%;
+    display: inline;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 19px;
+    transition: background 250ms;
+}
+
+
+label:hover {
+    background: var(--navylight) !important;
+}
+
+.og::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 75%;
+    background: var(--background);
+    left: 99%
+}
+
+.generate {
+    width: 20%;
+    padding: 15px 25px;
+    border: 3px solid var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--navy);
+    font-size: 19px;
+    cursor: pointer;
+    transition: background 250ms;
+}
+
+.generate:hover {
+    background: var(--navy);
+    color: white;
+}
+
+.graphholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.graphbox {
+    width: 88%;
+    height: 88%;
+    background: var(--navy);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 10px 0 0;
+}
+
+.upper {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.lower {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;  
+    gap: 15px;
+}
+
+.blank {
+    width: 10%;
+    height: 100%;
+}
+
+.names {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    writing-mode: vertical-rl;
+    font-weight: 500; 
+}
+
+.values {
+    width: 10%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.graph {
+    width: 90%;
+    height: 85%;
+    float: left;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    background: white;
+    position: relative;
+}
+
+.valueg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+.line {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgba(0,0,0,.2)
+}
+
+.graphlines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

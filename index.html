@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Graph Generator</title>
+    <link rel="shortcut icon" href="icon.png">
+    <script src="https://kit.fontawesome.com/5355affb26.js" crossorigin="anonymous"></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="boxes">
+        <div class="adder">
+            <div class="plus"><i  id="plusadd" class="fa-solid fa-plus"></i></div>
+            <div class="itemsholder">
+                <!-- <div class="itemholder">
+                    <div class="item">
+                        <div class="x"><i class="fa-solid fa-xmark"></i></div>
+                        <input type="text" class="name" placeholder="Name">
+                        <input type="number" class="value" placeholder="Value">
+                        <div class="colors">
+                            <input type="text" class="colort" placeholder="#Color">
+                            <input type="color" class="colorp">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="selector">
+            <div class="chooser">
+                <input type="radio" id="optgraph">
+                <label class="og" for="optgraph">Chart</label>
+                <input type="radio" id="optpie">
+                <label class="op" for="optpie">Graph</label>
+            </div>
+            <div class="generate" id="generatebtn">Generate</div>
+        </div>
+    </div>
+    <div class="graphholder">
+        <div class="graphbox">
+            <div class="upper">
+                <div class="values">
+                    <div class="valueg"></div>
+                    <div class="valueg"></div>
+                    <div class="valueg"></div>
+                    <div class="valueg"></div>
+                    <div class="valueg"></div>
+                    <div class="valueg"></div>
+                    <div class="valueg"></div>
+                </div>
+                <div class="graph">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="blank"></div>
+                <div class="names">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
